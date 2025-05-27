@@ -8,7 +8,9 @@ _Research Interests_: Macro Labor, Firm Dynamics, Worker Flows, Structural Chang
 
 ### Contact Information
 - _Phone_: +1 (980) 322-8581
-- _Email_: [carter.bryson@bea.gov](mailto:carter.bryson@bea.gov) (Work) | [wcarterbryson@gmail.com](mailto:wcarterbryson@gmail.com) (Personal)
+- _Email_:
+    - Work: `carter.bryson@bea.gov`
+    - Personal: `wcarterbryson@bea.gov`
 
 ### Disclaimer
 _The views expressed in this website are solely my own and not necessarily those of the U.S. Bureau of Economic Analysis or the U.S. Department of Commerce._
