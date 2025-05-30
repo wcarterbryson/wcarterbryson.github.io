@@ -18,20 +18,35 @@
   /*--link-hover: #bfdbfe;      /* Lighter blue on hover */
 }
 
-/* Old color scheme */
-/* :root {
-  --bg-color: #fff;
-  --text-color: #000;
-  --header-bg: #fff;
-  --header-text: #1e40af;
+/* Navigation buttons */
+.site-nav {
+  background-color: var(--header-bg);
 }
 
-[data-theme="dark"] {
-  --bg-color: #000;
-  --text-color: #fff;
-  --header-bg: #000;
-  --header-text: #60a5fa;
-} */
+.site-nav ul {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.site-nav a {
+  color: var(--header-text);
+  position: relative;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.site-nav a.active {
+  font-weight: bold;
+  color: var(--header-text);
+}
 
 /* Links */
 a {
@@ -49,16 +64,23 @@ header {
   background-color: var(--header-bg);
   color: var(--header-text);
 }
+
 header h1 {
   color: var(--header-text);
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 1.5rem 4vw; */
   padding: 1rem clamp(1.5rem, 3.5vw, 5rem);
 }
 
@@ -120,8 +142,6 @@ footer {
 }
 
 .footer-container {
-  /* width: 100%;
-  max-width: 1200px; */
   width: clamp(250px, 90%, 1200px);
   margin: 0 auto;
   padding: 0.5rem 0.5rem;
@@ -183,7 +203,6 @@ input:checked + .slider .moon {
 }
 
 /* Research page */
-
 .research-page {
   margin-bottom: 2rem; /* Space between each section of papers */
 }

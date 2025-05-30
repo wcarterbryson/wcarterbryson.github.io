@@ -1,58 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Teaching | Carter Bryson</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carter Bryson | Research</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </head>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-    </nav>
-    <h1>Teaching</h1>
-  </header>
+  <body>
 
-  <main>
-    <div class="course">
-      <div class="course-title">
-        ECON 101: Introduction to Economics
-      </div>
-      <a href="files/econ101_syllabus.pdf" target="_blank">Download Syllabus</a>
-      <div class="details-toggle" onclick="toggleDetails(this)">
-        ▶ Course Details
-      </div>
-      <div class="course-details">
-        This course provides an overview of microeconomic and macroeconomic principles, including supply and demand, market structures, fiscal policy, and international trade.
-      </div>
-    </div>
+    <!-- Header -->
+    <header class="container">
+      <h1><a href="index.html">Carter Bryson</a></h1>
 
-    <div class="course">
-      <div class="course-title">
-        ECON 301: Econometrics
+      <!-- Navigation -->
+      <div class="header-right">
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Light/Dark mode toggle -->
+        <label class="theme-toggle" aria-label="Toggle theme">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider">
+            <svg class="icon sun" viewBox="0 0 24 24">
+              <path d="M12 18a6 6 0 100-12 6 6 0 000 12z"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <svg class="icon moon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+            </svg>
+          </span>
+        </label>
       </div>
-      <a href="files/econ301_syllabus.pdf" target="_blank">Download Syllabus</a>
-      <div class="details-toggle" onclick="toggleDetails(this)">
-        ▶ Course Details
-      </div>
-      <div class="course-details">
-        A course covering the fundamentals of econometric theory and practice, including regression analysis, hypothesis testing, and applications in economic data analysis.
-      </div>
-    </div>
-  </main>
+    </header>
+    
+    <!-- Main -->
+    <main>
 
-  <script>
-    function toggleDetails(element) {
-      const details = element.nextElementSibling;
-      const isVisible = details.style.display === 'block';
-      details.style.display = isVisible ? 'none' : 'block';
-      element.textContent = isVisible ? '▶ Course Details' : '▼ Course Details';
-    }
-  </script>
+      <section class="body-text research-page">
+        <h3>Boston College</h3>
 
-</body>
+        <h4><strong>Sole Instructor</strong></h4>
+
+        <div class="paper-entry">
+          <p>
+            ECON 2202 Macroeconomic Theory (Undergraduate), <em>Teaching Fellow</em>
+          </p>
+          <div class="paper-links">
+            <a href="https://wcarterbryson.github.io/files/Syllabus_ECON220206.pdf" target="_blank" rel="noopener noreferrer">Syllabus Fall 2022</a>
+            <span class="divider">|</span>
+            <a href="https://wcarterbryson.github.io/files/Syllabus_ECON220205.pdf" target="_blank" rel="noopener noreferrer">Syllabus Spring 2023</a>
+          </div>
+        </div>
+
+        <div class="paper-entry">
+          <p>
+            Fundamentals of Economics
+            (<a href="https://www.bc.edu/bc-web/sites/bc-experience.html" target="_blank" rel="noopener noreferrer">Boston College Experience Program</a>), <em>Instructor</em>
+          </p>
+          <div class="paper-links">
+            <a href="https://wcarterbryson.github.io/files/BCE_Syllabus_Fundamentals_of_Econ.pdf" target="_blank" rel="noopener noreferrer">Syllabus Summer 2022</a>
+          </div>
+        </div>
+
+        <div class="paper-entry">
+          <p>
+            ECON 1151 Statistics (Undergraduate), <em>Teaching Fellow</em>
+          </p>
+          <div class="paper-links">
+            <a href="https://wcarterbryson.github.io/files/Syllabus_ECON115103.pdf" target="_blank" rel="noopener noreferrer">Syllabus Fall 2021</a>
+          </div>
+        </div>
+
+        <h4><strong>Teaching Assistant</strong></h4>
+          <p>
+            ECON 2228 Econometric Methods, Spring 2022 <br />
+            ECON 1101 Principles of Economics, Fall 2019 – Spring 2021
+          </p>
+        
+      </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        &copy; 2025 William Carter Bryson · Built with GitHub Pages
+      </div>
+    </footer>
+
+    <!-- Load scripts -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
