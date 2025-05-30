@@ -1,63 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Carter Bryson</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carter Bryson | Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Carter Bryson</h1>
+      <label class="theme-toggle" aria-label="Toggle theme">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider">
+          <svg class="icon sun" viewBox="0 0 24 24">
+            <path d="M12 18a6 6 0 100-12 6 6 0 000 12z"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon moon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+          </svg>
+        </span>
+      </label>
+    </header>
 
-  <header class="container">
-    <h1>Carter Bryson</h1>
-    <label class="theme-toggle" aria-label="Toggle theme">
-      <input type="checkbox" id="theme-toggle" />
-      <span class="slider">
-        <svg class="icon sun" viewBox="0 0 24 24">
-          <path d="M12 18a6 6 0 100-12 6 6 0 000 12z"/>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-        </svg>
-        <svg class="icon moon" viewBox="0 0 24 24">
-          <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
-        </svg>
-      </span>
-    </label>
-  </header>
-
-  <main class="container">
-    <section>
+    <section class="body-text container">
       <p>
-        Site currently under maintenance. 
+        Site currently under maintenance. Please see <a href="https://www.carterbryson.com/" target="_blank" rel="noopener noreferrer">carterbryson.com</a> for my full site.
       </p>
     </section>
-    <section>
-      <p>
-        Please see <a href="https://carterbryson.com/" target="_blank" rel="noopener noreferrer">carterbryson.com</a> for my full site.
-      </p>
-    </section>
-  </main>
+    
+    <footer>
+      <div class="footer-container">
+        &copy; 2025 William Carter Bryson · Built with GitHub Pages
+      </div>
+    </footer>
 
-  <footer class="container">
-    &copy; 2025 William Carter Bryson · Built with GitHub Pages
-  </footer>
-
-  <!-- Light/Dark mode -->
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    toggle.checked = currentTheme === 'dark';
-
-    toggle.addEventListener('change', () => {
-      const newTheme = toggle.checked ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
-  </script>
-
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
