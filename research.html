@@ -1,84 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Research | Carter Bryson</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carter Bryson | Research</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  </head>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="teaching.html">Teaching</a>
+  <body>
+
+    <!-- Header -->
+    <header class="container">
+      <h1>Carter Bryson</h1>
+      
+      <!-- Light/Dark mode toggle -->
+      <label class="theme-toggle" aria-label="Toggle theme">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider">
+          <svg class="icon sun" viewBox="0 0 24 24">
+            <path d="M12 18a6 6 0 100-12 6 6 0 000 12z"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon moon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+          </svg>
+        </span>
+      </label>
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
     </nav>
-    <h1>Research</h1>
-  </header>
 
-  <main>
-    <h3>Publications</h3>
+    <!-- Main -->
+    <main>
 
-    <div class="paper">
-      <h4 class="paper-title">
-        Understanding the Racial Employment Gap: The Role of Sectoral Shifts (with <a href="https://www.dbhagia.com/" target="_blank" rel="noopener noreferrer">Div Bhagia</a>)
-      </h4>
-      <p>
-        <strong><em>Labour Economics</em></strong>, October 2023
-      </p>
-      <div class="paper-links">
-        <a href=https://www.sciencedirect.com/science/article/abs/pii/S092753712300088X?via%3Dihub target="_blank" rel="noopener noreferrer">Published Version</a>
-        <span>|</span>
-        <a href=https://wcarterbryson.github.io/Bhagia_Bryson_REG_revision.pdf target="_blank" rel="noopener noreferrer">Preprint</a>
-        <span>|</span>
-        <span class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</span>
+      <!-- Publications -->
+      <section class="body-text research-page">
+        <h3>Publications</h3>
+
+        <div class="paper-entry">
+          <p>
+            Understanding the Racial Employment Gap: The Role of Sectoral Shifts 
+            (with <a href="https://www.dbhagia.com/" target="_blank" rel="noopener noreferrer">Div Bhagia</a>) <br />
+            <strong><em>Labour Economics</em></strong>, Volume 84, October 2023
+          </p>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+            <span class="divider">|</span>
+            <a href="https://www.sciencedirect.com/science/article/pii/S092753712300088X?via%3Dihub" target="_blank" rel="noopener noreferrer">Published Version</a>
+            <span class="divider">|</span>
+            <a href="https://wcarterbryson.github.io/files/Bhagia_Bryson_REG_revision.pdf" target="_blank" rel="noopener noreferrer">Preprint</a>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              The employment rate for Black men worsened significantly relative to White men during the second half of the 20th century. We explore the role of broad sectoral shifts in labor demand over this period in explaining this trend. We first quantify changes in local employment rates and population in response to local labor demand shifts for both groups of workers. We then combine our estimates with a stylized model that incorporates frictional local labor markets and imperfect mobility across markets. Our framework enables us to aggregate local responses while accounting for geographic mobility and regional employment composition. We find that sectoral reallocation can account for at most, one-fifth of the total exacerbation in the employment rate differential between Black and White men over 1970–2010. Out-migration from harder-hit markets, while large, only slightly mitigates the impact of negative labor demand shifts. We also find that most of the predicted change in the employment rate differential is due to differential response rather than differential exposure to sectoral shifts across groups.
+            </p>
+          </div>          
+        </div>
+      </section>
+
+      <!-- Working Papers -->
+      <section class="body-text research-page">
+        <h3>Working Papers</h3>
+
+        <div class="paper-entry">
+          <p>Declining Business Dynamism and Worker Mobility</p>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+            <span class="divider">|</span>
+            <a href="https://wcarterbryson.github.io/files/Bryson_JMP.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              Younger workers tend to sort into younger firms, suggesting that the decline in U.S. business dynamism differentially affected labor market outcomes over the worker life cycle. In this paper, I develop an equilibrium labor market sorting model with both on-the-job search and two-sided, life-cycle heterogeneity to quantify the career consequences of firm aging. I find that it accounts for about 45 percent of the decline in the employer switching rate and about 15 percent of the decline in the employment-to-population ratio since the 1990s. Total welfare of employed workers declines by about 0.9 percent and younger workers experience larger losses.
+            </p>
+          </div>          
+        </div>
+
+        <div class="paper-entry">
+          <p>The Ins and Outs of Unemployment Shocks</p>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+            <span class="divider">|</span>
+            <a href="https://wcarterbryson.github.io/files/Unemployment_Shocks.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              This paper quantifies the contribution of unemployment inflows and outflows to cyclical changes in the unemployment rate. I show that the time series behavior of worker flows implies that they exhibit a specific dynamic structure. I then implement a simple identification strategy motivated by this evidence in order to empirically separate changes in job separation and job finding. I find that both margins contribute significantly to unemployment volatility and that their interaction is important for understanding the business cycle dynamics of the unemployment rate. My results suggest that models of the labor market should aim to capture this interaction as well as cyclical variation in job loss.
+            </p>
+          </div>          
+        </div>
+      </section>      
+      
+      <!-- Work in Progress -->
+      <section class="body-text research-page">
+        <h3>Work in Progress</h3>
+
+        <div class="paper-entry">
+          <p>
+            A Model of Labor Market Sorting and Firm Dynamics  
+            (<button class="abstract-toggle" aria-expanded="false">Abstract</button>)
+          </p>
+          <div class="abstract-text hidden">
+            <p>
+              This paper integrates firm entry, exit, and growth into an equilibrium labor market sorting model with random matching, on-the-job search, and aggregate uncertainty. Tractability is achieved by using a joint surplus representation of the worker-firm problem and by assuming Bertrand competition for workers between incumbent and poaching firms. Ongoing work examines the model’s ability to match cross-sectional empirical patterns of worker flows, firm dynamics, and wage differentials, as well as its business cycle implications for job ladder dynamics across worker groups.
+            </p>
+          </div>          
+        </div>
+
+        <div class="paper-entry">
+          <p>
+            Sectoral Reallocation and the Firm Life-Cycle 
+            (<a href="https://wcarterbryson.github.io/files/Bryson_SEA_2024_Firm_Life_Cycle.pdf" target="_blank" rel="noopener noreferrer">Slides</a>)
+          </p>
+        </div>
+
+        <div class="paper-entry">
+          <p>
+            The Anatomy of Labor Market Flows
+            (with <a href="https://robertulbricht.com/" target="_blank" rel="noopener noreferrer">Robert Ulbricht</a>
+            and <a href="https://sites.google.com/view/elenapellegrini/" target="_blank" rel="noopener noreferrer">Elena Pellegrini</a>)
+          </p>
+        </div>
+
+        <div class="paper-entry">
+          <p>
+            The Seasons They Are A-Changin': Fifty Years of Definitions and a Way Forward
+            (with <a href="https://garycornwall.weebly.com/" target="_blank" rel="noopener noreferrer">Gary Cornwall</a>)
+          </p>
+        </div>
+        
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        &copy; 2025 William Carter Bryson · Built with GitHub Pages
       </div>
-      <div class="abstract-text">
-        The employment rate for Black men worsened significantly relative to White men during the second half of the 20th century. We explore the role of broad sectoral shifts in labor demand over this period in explaining this trend. We first quantify changes in local employment rates and population in response to local labor demand shifts for both groups of workers. We then combine our estimates with a stylized model that incorporates frictional local labor markets and imperfect mobility across markets. Our framework enables us to aggregate local responses while accounting for geographic mobility and regional employment composition. We find that sectoral reallocation can account for at most, one-fifth of the total exacerbation in the employment rate differential between Black and White men over 1970–2010. Out-migration from harder-hit markets, while large, only slightly mitigates the impact of negative labor demand shifts. We also find that most of the predicted change in the employment rate differential is due to differential response rather than differential exposure to sectoral shifts across groups.
-      </div>
-    </div>
+    </footer>
 
-    <h3>Working Papers</h3>
-
-    <div class="paper">
-      <h4 class="paper-title">
-        Declining Business Dynamism and Worker Mobility
-        <a href="https://wcarterbryson.github.io/Bryson_JMP.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-      </h4>
-      <div class="abstract-toggle" onclick="toggleAbstract(this)">▶ Abstract</div>
-      <div class="abstract-text">
-        Younger workers tend to sort into younger firms, suggesting that the decline in U.S. business dynamism differentially affected labor market outcomes over the worker life cycle. In this paper, I develop an equilibrium labor market sorting model with both on-the-job search and two-sided, life-cycle heterogeneity to quantify the career consequences of firm aging. I find that it accounts for about 45 percent of the decline in the employer switching rate and about 15 percent of the decline in the employment-to-population ratio since the 1990s. Total welfare of employed workers declines by about 0.9 percent and younger workers experience larger losses.
-      </div>
-    </div>
-
-    <div class="paper">
-      <h4 class="paper-title">
-        Declining Business Dynamism and Worker Mobility
-        <a href="https://wcarterbryson.github.io/Bryson_JMP.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-      </h4>
-      <div class="abstract-toggle" onclick="toggleAbstract(this)">▶ Abstract</div>
-      <div class="abstract-text">
-        Younger workers tend to sort into younger firms, suggesting that the decline in U.S. business dynamism differentially affected labor market outcomes over the worker life cycle. In this paper, I develop an equilibrium labor market sorting model with both on-the-job search and two-sided, life-cycle heterogeneity to quantify the career consequences of firm aging. I find that it accounts for about 45 percent of the decline in the employer switching rate and about 15 percent of the decline in the employment-to-population ratio since the 1990s. Total welfare of employed workers declines by about 0.9 percent and younger workers experience larger losses.
-      </div>
-    </div>
-
-    <h3>Work in Progress</h3>
-
-  </main>
-
-  <!-- Script to toggle abstract -->
-  <script>
-  function toggleAbstract(element) {
-    const abstract = element.parentElement.nextElementSibling;
-
-    if (abstract.style.display === "none" || abstract.style.display === "") {
-      abstract.style.display = "block";
-    } else {
-      abstract.style.display = "none";
-    }
-  }
-  </script>
-
-</body>
+    <!-- Load scripts -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

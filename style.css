@@ -97,6 +97,10 @@ body {
   margin-top: 0rem;
 }
 
+.left-align {
+  text-align: left;
+}
+
 .contact-section {
   text-align: left;
 }
@@ -176,4 +180,61 @@ input:checked + .slider .sun {
 
 input:checked + .slider .moon {
   opacity: 1;
+}
+
+/* Research page */
+
+.research-page {
+  margin-bottom: 2rem; /* Space between each section of papers */
+}
+
+.paper-entry {
+  text-align: left;
+}
+
+.paper-entry p {
+  margin-bottom: 0.2rem; /* Space between paper title and links */
+}
+
+.paper-links {
+  font-size: 0.9rem;
+}
+
+.paper-links a {
+  color: var(--header-text);
+  text-decoration: none;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+.paper-links .divider {
+  margin: 0 0.25rem;
+  color: #888;
+}
+
+.abstract-toggle {
+  background: none;
+  border: none;
+  color: var(--link-color);
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.abstract-toggle:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+.abstract-text {
+  font-size: 0.9rem;
+   text-align: justify; 
+}
+
+.hidden {
+  display: none;
 }
