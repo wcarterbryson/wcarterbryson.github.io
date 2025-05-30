@@ -1,10 +1,3 @@
-// Toggle light/dark theme
-const toggle = document.getElementById('theme-toggle');
-
-toggle.addEventListener('change', () => {
-  document.documentElement.setAttribute('data-theme', toggle.checked ? 'dark' : 'light');
-});
-
 // Toggle show/hide abstract
 document.querySelectorAll('.abstract-toggle').forEach(button => {
   button.addEventListener('click', () => {
