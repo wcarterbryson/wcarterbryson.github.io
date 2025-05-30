@@ -132,10 +132,54 @@ body {
 }
 
 .disclaimer {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
   text-align: justify;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* Container for picture + body */
+.content-container {
+  display: flex; 
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 1rem clamp(1.5rem, 5vw, 4rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Picture */
+.sidebar {
+  max-width: 250px;
+  padding-top: 1rem;
+  flex-shrink: 0;
+}
+
+.sidebar img {
+  width: 100%;
+  height: auto;
+}
+
+/* Stack on small screens */
+@media (max-width: 768px) {
+  
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    max-width: 100%;
+    text-align: center;
+  }
+  .sidebar {
+    max-width: 80%;
+    padding-top: 0;
+  }
+
+  .sidebar img {
+    max-width: 100%;
+  }
+
 }
 
 /* Layout of footer */
