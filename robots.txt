@@ -1,0 +1,14 @@
+# robots.txt for wcarterbryson.github.io
+
+# Allow all search engines
+User-agent: *
+
+# Allow everything by default
+Disallow:
+
+# Prevent crawling of potential development or private directories (adjust if needed)
+Disallow: /assets/js/
+Disallow: /files/
+
+# Sitemap location (optional but helpful for SEO)
+Sitemap: https://wcarterbryson.github.io/sitemap.xml
