@@ -12,10 +12,22 @@ document.querySelectorAll('.abstract-toggle').forEach(button => {
 // Highlight the current page in the navigation menu
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.site-nav a');
-  const currentPath = window.location.pathname.split('/').pop(); // Get the current page filename
+  let currentPath = window.location.pathname.split('/').pop();
+
+  if (currentPath === '') currentPath = 'index.html';
+
+  if (currentPath === 'index.html') {
+    document.title = "Carter Bryson | Home";
+  } else {
+    let pageName = currentPath.replace('.html', '');
+    pageName = pageName.charAt(0).toUpperCase() + pageName.slice(1);
+    document.title = `Carter Bryson | ${pageName}`;
+  }
 
   links.forEach(link => {
-    const linkPath = link.getAttribute('href');
+    let linkPath = link.getAttribute('href');
+    if (linkPath === '') linkPath = 'index.html';
+
     if (linkPath === currentPath) {
       link.classList.add('active');
     }
