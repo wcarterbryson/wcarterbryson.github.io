@@ -15,8 +15,8 @@ This is the source code for my personal academic website, built with HTML, CSS, 
 
 ### Directory Structure
 
-📁 root/
 ```
+📁 root/
 ├── index.html
 ├── research.html
 ├── teaching.html
