@@ -2,7 +2,7 @@
 
 This is the source code for my personal academic website, built with HTML, CSS, and JavaScript, and hosted on [GitHub Pages](https://pages.github.com/). The site includes information about my research, teaching, and professional activities.
 
-🔗 **Live Site:** [https://wcarterbryson.github.io/](wcarterbryson.github.io)
+🔗 **Live Site:** [wcarterbryson.github.io](https://wcarterbryson.github.io/)
 
 ## 📄 Contents
 
