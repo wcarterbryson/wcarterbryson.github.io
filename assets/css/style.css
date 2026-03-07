@@ -5,7 +5,6 @@
   --header-text: #0b3d91;     /* Accessible navy blue (WCAG AAA) */
   --link-color: #0b3d91;      /* Same as header for consistent UX */
   --link-hover: #f97316;      /* Bright orange for light mode */
-  /*--link-hover: #062d6c;      /* Slightly darker on hover for feedback */
 }
 
 [data-theme="dark"] {
@@ -15,7 +14,6 @@
   --header-text: #93c5fd;     /* Light desaturated blue (AAA compliant) */
   --link-color: #93c5fd;      /* Same as header-text for consistency */
   --link-hover: #fca55d;      /* Softer orange for dark mode */
-  /*--link-hover: #bfdbfe;      /* Lighter blue on hover */
 }
 
 /* Links */
@@ -104,7 +102,7 @@ body {
   margin: 0 auto;
   padding: 0rem 1rem;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.35;
   color: var(--text-color);
   text-align: justify;
   word-wrap: break-word;
@@ -114,7 +112,7 @@ body {
 .body-text h3,
 .body-text h4 {
   text-align: left;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .body-text h2 + p,
@@ -135,7 +133,7 @@ body {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   text-align: justify;
-  font-size: 0.725rem;
+  font-size: 0.7rem;
 }
 
 /* Container for picture + body */
@@ -151,7 +149,7 @@ body {
 
 /* Picture */
 .sidebar {
-  max-width: 250px;
+  max-width: 285px;
   padding-top: 1rem;
   flex-shrink: 0;
 }
@@ -252,12 +250,12 @@ input:checked + .slider .moon {
 
 /* Research page */
 .teaching-page {
-  margin-bottom: 1.5rem;  /* Space between each section of papers */
+  margin-bottom: 1.25rem;  /* Space between each section of papers */
 }
 
 /* Research page */
 .research-page {
-  margin-bottom: 1.5rem;  /* Space between each section of papers */
+  margin-bottom: 1.25rem;  /* Space between each section of papers */
 }
 
 .paper-entry {
@@ -265,11 +263,11 @@ input:checked + .slider .moon {
 }
 
 .paper-entry p {
-  margin-bottom: 0.25rem; /* Space between paper title and links */
+  margin-bottom: 0.5rem; /* Space between paper title and links */
 }
 
 .paper-links {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .paper-links a {
@@ -303,7 +301,7 @@ input:checked + .slider .moon {
 }
 
 .abstract-text {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
    text-align: justify; 
 }
 
