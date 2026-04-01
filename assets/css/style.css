@@ -87,7 +87,6 @@ header h1 {
 
 /* Layout of body */
 body {
-  font-family: sans-serif;
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -102,10 +101,14 @@ body {
   margin: 0 auto;
   padding: 0rem 1rem;
   font-size: 1rem;
-  line-height: 1.35;
+  line-height: 1.45;
   color: var(--text-color);
   text-align: justify;
   word-wrap: break-word;
+}
+
+.body-text p {
+  margin: 0.5rem 0;
 }
 
 .body-text h2,
@@ -149,7 +152,7 @@ body {
 
 /* Picture */
 .sidebar {
-  max-width: 285px;
+  max-width: 240px;
   padding-top: 1rem;
   flex-shrink: 0;
 }
@@ -248,31 +251,23 @@ input:checked + .slider .moon {
   opacity: 1;
 }
 
-/* Research page */
+/* Teaching page */
 .teaching-page {
-  margin-bottom: 1.25rem;  /* Space between each section of papers */
+  margin-bottom: 1.25rem;
 }
 
 /* Research page */
 .research-page {
-  margin-bottom: 1.25rem;  /* Space between each section of papers */
+  margin-bottom: 0.5rem;
 }
 
 .paper-entry {
+  margin-bottom: 1.25rem;
   text-align: left;
-}
-
-.paper-entry p {
-  margin-bottom: 0.5rem; /* Space between paper title and links */
 }
 
 .paper-links {
   font-size: 0.9rem;
-}
-
-.paper-links a {
-  color: var(--header-text);
-  text-decoration: none;
 }
 
 .paper-links a:hover {
@@ -282,14 +277,13 @@ input:checked + .slider .moon {
 
 .paper-links .divider {
   margin: 0 0.25rem;
-  color: #888;
+  color: #999;
 }
 
 .abstract-toggle {
   background: none;
   border: none;
   color: var(--link-color);
-  text-decoration: none;
   cursor: pointer;
   font: inherit;
   padding: 0;
@@ -302,7 +296,7 @@ input:checked + .slider .moon {
 
 .abstract-text {
   font-size: 0.9rem;
-   text-align: justify; 
+  line-height: 1.45;
 }
 
 .hidden {
