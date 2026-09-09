@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carter Bryson | Home</title>
-    <script src="assets/js/set-title.js" defer></script>
+    <title>Carter Bryson</title>
     <script src="assets/js/light-dark.js" defer></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <meta name="google-site-verification" content="RnlPGY3rTuLKJNzwXHXVoZwpw29bpC6PoPgCtwYHUnM" />
-    <meta name="description" content="Carter Bryson's research site.">
-    <meta property="og:title" content="Carter Bryson | Home">
-    <meta property="og:description" content="Explore Carter Bryson’s research and bio.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wcarterbryson.github.io/">
+    <meta name="description" content="Carter Bryson is a macroeconomist studying labor markets, firm dynamics, and structural change." />
+    <meta property="og:title" content="Carter Bryson" />
+    <meta property="og:description" content="Macroeconomist studying labor markets, firm dynamics, and structural change." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wcarterbryson.github.io/" />
   </head>
 
   <body>
@@ -22,16 +23,7 @@
     <header class="header-container">
       <h1><a href="index.html">Carter Bryson</a></h1>
 
-      <!-- Navigation -->
       <div class="header-right">
-        <nav class="site-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-          </ul>
-        </nav>
-        
         <!-- Light/Dark mode toggle -->
         <label class="theme-toggle" aria-label="Toggle theme">
           <input type="checkbox" id="theme-toggle" />
@@ -48,52 +40,159 @@
       </div>
     </header>
 
-    <!-- Content -->
-    <div class="content-container">
+    <main class="page">
 
-      <!-- Headshot -->
-      <aside class="sidebar">
-        <img src="assets/images/0Z7A8402_crop.jpg" alt="Website Headshot" />
-      </aside>
+      <!-- About -->
+      <section class="intro">
+        <div class="headshot">
+          <img src="assets/images/0Z7A8402_crop.jpg" alt="Carter Bryson" />
+        </div>
+        <div class="intro-body">
+          <h2>About</h2>
+          <div class="prose">
+            <p>
+              I am a macroeconomist studying empirical and theoretical topics in labor markets, firm dynamics, and structural change. My research combines microdata analysis and structural modeling to understand macroeconomic dynamics both in the long run and over the business cycle. I am also interested in time series methods for detecting and adjusting seasonality in economic data.
+            </p>
+            <p class="meta">
+              <em>Curriculum vitae:</em> <a href="https://wcarterbryson.github.io/files/Carter_Bryson_CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a><br />
+              <em>Email:</em> <a href="mailto:wcarterbryson@gmail.com">wcarterbryson@gmail.com</a><br />
+              <em>Phone:</em> +1 (980) 322-8581
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <!-- Main body -->
-      <main>
+      <!-- Publications -->
+      <section class="section">
+        <h2>Publications</h2>
 
-        <!-- About -->
-        <section class="body-text">
-          <h3>About</h3>
+        <div class="paper-entry">
           <p>
-            I am a Research Economist at the <a href="https://www.bea.gov" target="_blank" rel="noopener noreferrer">Bureau of Economic Analysis (BEA)</a>. 
-            My research combines microdata analysis and structural modeling to study labor market dynamics both in the long run and over the business cycle. I am also interested in time series methods for detecting and adjusting seasonality in economic data.
+            <span class="paper-title">The Ins and Outs of Unemployment Shocks</span><br />
+            <span class="paper-venue"><em>Journal of Macroeconomics</em>, Volume 88, June 2026</span>
           </p>
-          <p class="left-align">
-            <em>Research Fields:</em> Macroeconomics, Labor Economics, Time Series Econometrics<br />
-            <!-- <em>Research Interests:</em> Macro Labor, Firm Dynamics, Worker Flows, Structural Change<br /> -->
-            <em>Curriculum Vitae:</em> <a href="https://wcarterbryson.github.io/files/Carter_Bryson_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-          </p>
-        </section>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+            <span class="divider">|</span>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0164070426000194?via%3Dihub" target="_blank" rel="noopener noreferrer">Published Version</a>
+            <span class="divider">|</span>
+            <a href="https://wcarterbryson.github.io/files/unemployment-shocks.pdf" target="_blank" rel="noopener noreferrer">Preprint</a>
+            <span class="divider">|</span>
+            <a href="https://github.com/wcarterbryson/unemployment-shocks-replication" target="_blank" rel="noopener noreferrer">Replication</a>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              This paper quantifies the roles of unemployment inflows and outflows in cyclical unemployment. Motivated by the joint dynamic relationship between worker flows and the unemployment rate, I design a simple identification strategy that accounts for this pattern and use it to empirically isolate changes in job separation and job finding. I find that both margins contribute significantly to unemployment volatility and that their interaction is important for understanding the business-cycle dynamics of the unemployment rate. In particular, an initial spike in job loss leads to a future decline in the job finding rate, supporting mechanisms from a newer class of models that predict this behavior. My results caution against ignoring cyclical variation in job loss and suggest that macroeconomic models of the labor market should aim to explicitly capture the dynamic interaction between the ins and outs of unemployment.
+            </p>
+          </div>
+        </div>
 
-        <!-- Contact -->
-        <section class="body-text contact-section">
-          <h3>Contact</h3>
+        <div class="paper-entry">
           <p>
-            <em>Phone:</em> +1 (980) 322-8581<br />
-            <em>Email:</em> <a href="mailto:carter.bryson@bea.gov">carter.bryson@bea.gov</a> (Work) | 
-            <a href="mailto:wcarterbryson@gmail.com">wcarterbryson@gmail.com</a> (Personal)<br />
-            <em>LinkedIn:</em> <a href="https://www.linkedin.com/in/carter-bryson" target="_blank" rel="noopener noreferrer">linkedin.com/in/carter-bryson</a>
+            <span class="paper-title">Understanding the Racial Employment Gap: The Role of Sectoral Shifts</span>
+            (with <a href="https://www.dbhagia.com/" target="_blank" rel="noopener noreferrer">Div Bhagia</a>)<br />
+            <span class="paper-venue"><em>Labour Economics</em>, Volume 84, October 2023</span>
           </p>
-        </section>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+            <span class="divider">|</span>
+            <a href="https://www.sciencedirect.com/science/article/pii/S092753712300088X?via%3Dihub" target="_blank" rel="noopener noreferrer">Published Version</a>
+            <span class="divider">|</span>
+            <a href="https://wcarterbryson.github.io/files/Bhagia_Bryson_REG_revision.pdf" target="_blank" rel="noopener noreferrer">Preprint</a>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              The employment rate for Black men worsened significantly relative to White men during the second half of the 20th century. We explore the role of broad sectoral shifts in labor demand over this period in explaining this trend. We first quantify changes in local employment rates and population in response to local labor demand shifts for both groups of workers. We then combine our estimates with a stylized model that incorporates frictional local labor markets and imperfect mobility across markets. Our framework enables us to aggregate local responses while accounting for geographic mobility and regional employment composition. We find that sectoral reallocation can account for at most, one-fifth of the total exacerbation in the employment rate differential between Black and White men over 1970–2010. Out-migration from harder-hit markets, while large, only slightly mitigates the impact of negative labor demand shifts. We also find that most of the predicted change in the employment rate differential is due to differential response rather than differential exposure to sectoral shifts across groups.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Disclaimer -->
-        <section class="body-text disclaimer">
+      <!-- Working Papers -->
+      <section class="section">
+        <h2>Working Papers</h2>
+
+        <div class="paper-entry">
+          <p><span class="paper-title">Declining Business Dynamism and Worker Mobility</span></p>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+            <span class="divider">|</span>
+            <a href="https://wcarterbryson.github.io/files/Bryson_JMP.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              Younger workers tend to sort into younger firms, suggesting that the decline in U.S. business dynamism differentially affected labor market outcomes over the worker life cycle. In this paper, I develop an equilibrium labor market sorting model with both on-the-job search and two-sided, life-cycle heterogeneity to quantify the career consequences of firm aging. I find that it accounts for about 45 percent of the decline in the employer switching rate and about 15 percent of the decline in the employment-to-population ratio since the 1990s. Total welfare of employed workers declines by about 0.9 percent and younger workers experience larger losses.
+            </p>
+          </div>
+        </div>
+
+        <div class="paper-entry">
           <p>
-            <em>
-              The views expressed in this website are solely my own and not necessarily those of the U.S. Bureau of Economic Analysis or the U.S. Department of Commerce.
-            </em>
+            <span class="paper-title">The Seasons They Are A-Changin': A Century of Definitions and a Way Forward</span>
+            (with <a href="https://grycrnwll.github.io/" target="_blank" rel="noopener noreferrer">Gary Cornwall</a>)
           </p>
-        </section>
-      </main>
-    </div>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+            <span class="divider">|</span>
+            <a href="https://www.bea.gov/research/papers/2026/seasons-they-are-changin-century-definitions-and-way-forward" target="_blank" rel="noopener noreferrer">BEA Working Paper</a>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              What is seasonality? To date, there is not yet a consensus definition, as over a dozen unique definitions of seasonality can be found in the economics and statistics literature. This lack of agreement complicates the identification of, and adjustment for, seasonal effects in economic time series. In this paper, we propose a new definition of seasonality as well as how to detect and adjust for it, ultimately aiming to build consensus around a more unified approach. We first review the literature and identify common themes with an eye toward formulating a foundational definition—expressed in both plain language and mathematical terms—that can be used by academics, data providers, policymakers, and practitioners alike. We then propose to classify a series as seasonal if, among all its possible repeating cycles, the ones associated with the fundamental periodicity are demonstrably larger than the others. In other words, we define seasonality as a measure of relative peak dominance in the spectral density function, building on Nerlove (1964) and Granger (1978). Next, we develop a new methodology for detecting seasonality and performing seasonal adjustment that follows directly from our definition and leverages properties of the sample periodogram, the empirical counterpart to the spectral density function. We illustrate the performance of our test statistic through simulation studies and find that it is well-sized and has good power. Lastly, we introduce Stochastic Spectral Imputation (SSI), an adjustment procedure that outperforms standard methods currently used by national statistical offices when applied to prominent macroeconomic time series.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work in Progress -->
+      <section class="section">
+        <h2>Work in Progress</h2>
+
+        <div class="paper-entry">
+          <p><span class="paper-title">Sectoral Reallocation and the Firm Life-Cycle</span></p>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              The United States experienced a broad reallocation of economic activity across sectors in recent decades. The manufacturing sector accounted for about a quarter of total value added in 1990, but now comprises less than 15%. At the same time, the firm entry rate fell dramatically from about 15% in 1990 to under 9% in 2019. This paper investigates whether and how these two important macroeconomic trends are related. Using data from the Business Employment Dynamics (BED) program of the Bureau of Labor Statistics (BLS), I first document several facts about establishment dynamics over the life-cycle. Notably, average establishment size at birth declined in recent cohorts, especially in the manufacturing sector, while cohort-specific growth and exit rates remained largely unchanged. Then, I build a multi-sector firm dynamics model in which within-sector shocks to firm fundamentals spill over across sectors, shifting the equilibrium composition of demand for sectoral goods. The model features a realistic firm life cycle that can capture the empirical patterns of firm birth, death, and growth within sectors. I use the model to quantify and decompose the contributions of within-sector adjustments in firm dynamics – driven by changes in fixed costs of production, fixed costs of entry, and the persistence and dispersion of idiosyncratic shocks to productivity/demand – versus across-sector shifts in demand to aggregate sectoral reallocation. I find that absent changes in sector-level firm fundamentals, the decline in manufacturing value added would have been more than twice as large, indicating that within-sector firm dynamics attenuated structural change.
+            </p>
+          </div>
+        </div>
+
+        <div class="paper-entry">
+          <p><span class="paper-title">Firm Dynamics and the Cyclicality of Labor Market Sorting</span></p>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              A large literature examines the business cycle dynamics of labor market sorting between heterogeneous workers and firms. Though these studies typically consider a fixed distribution of firm types, firm dynamics such as entry, exit, and growth are strongly cyclical in the data. This paper develops a framework to jointly analyze worker and job flows in which entrepreneurs face fixed startup costs, such that firm entry and exit are endogenously determined in the tradition of Hopenhayn (1992). Tractability is achieved by using a joint surplus representation of the worker-firm problem and by assuming Bertrand competition for workers between incumbent and poaching firms. Ongoing work examines the model's ability to match cross-sectional empirical patterns of worker flows and firm dynamics, as well as its business-cycle implications for job ladder dynamics across worker groups. When calibrated to labor market aggregates, model simulations show that procyclical firm entry amplifies and propagates fluctuations in unemployment, job switching, and mismatch.
+            </p>
+          </div>
+        </div>
+
+        <div class="paper-entry">
+          <p>
+            <span class="paper-title">Unemployment Insurance and Wage Dynamics in the Post-Pandemic Labor Market</span>
+            (with <a href="https://sites.google.com/view/elenapellegrini/" target="_blank" rel="noopener noreferrer">Elena Pellegrini</a>)
+          </p>
+          <div class="paper-links">
+            <button class="abstract-toggle" aria-expanded="false">Abstract</button>
+          </div>
+          <div class="abstract-text hidden">
+            <p>
+              This paper studies how the unprecedented expansion of unemployment insurance during the Covid pandemic affected wage dynamics and their passthrough to inflation. Using microdata from the Current Population Survey (CPS), we show that the post-pandemic increase in aggregate wage growth was driven primarily by wage gains among job stayers rather than by job-to-job reallocation. At the same time, wage growth was disproportionately concentrated among lower-wage workers, leading to a temporary compression of the wage distribution. Complementary evidence from the Survey of Consumer Expectations (SCE) indicates that reservation wages rose sharply during the period of expanded UI benefits and declined in states that terminated these programs early. These findings point to a central role for UI in shaping workers' outside options and firms' wage-setting behavior. We interpret the evidence through the lens of a general equilibrium wage-posting framework with incomplete markets, in which more generous UI raises reservation wages and induces firms to increase wages within ongoing matches, particularly for lower-wage workers. Ongoing work uses this framework to quantify the contribution of different UI policies to wage growth, labor reallocation, and inflation during the post-pandemic recovery.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <p class="disclaimer">
+        <em>The views expressed on this website are solely my own and not necessarily those of my current or former employers.</em>
+      </p>
+
+    </main>
 
     <!-- Footer -->
     <footer>

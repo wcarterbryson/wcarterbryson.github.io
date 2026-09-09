@@ -1,61 +1,44 @@
 # Carter Bryson – Personal Academic Website
 
-This is the source code for my personal academic website, built with HTML, CSS, and JavaScript, and hosted on [GitHub Pages](https://pages.github.com/). The site includes information about my research, teaching, and professional activities.
+Source for my personal academic website, built with plain HTML, CSS, and
+JavaScript and hosted on [GitHub Pages](https://pages.github.com/). No build
+step — the files in this repo are served as-is.
 
-🔗 **Live Site:** [wcarterbryson.github.io](https://wcarterbryson.github.io/)
+🔗 **Live site:** [wcarterbryson.github.io](https://wcarterbryson.github.io/)
 
-## 📄 Contents
+## Structure
 
-- `index.html` – Homepage
-- `research.html` – Research projects and working papers
-- `teaching.html` – Teaching experience and materials
-- `assets/` – Stylesheets, scripts, and images
-- `sitemap.xml` – Sitemap for search engine indexing
-- `robots.txt` – Crawling instructions for search engines
+The site is a single continuous page.
 
-### Directory Structure
+| Path | Purpose |
+| --- | --- |
+| `index.html` | The entire site: About (with contact details), Publications, Working Papers, Work in Progress |
+| `assets/css/style.css` | All styling, including the light/dark theme tokens |
+| `assets/js/light-dark.js` | Light/dark toggle, persists choice in `localStorage` |
+| `assets/js/script.js` | Expand/collapse paper abstracts |
+| `assets/js/set-title.js` | Per-page `<title>` helper (only used by the archived pages below) |
+| `assets/images/` | Headshots |
+| `files/` | Papers, slides, syllabi, CV (linked by absolute URL) |
+| `sitemap.xml`, `robots.txt` | SEO |
+| `research.html`, `teaching.html` | **Archived.** Kept on disk but not linked from anywhere and excluded from the sitemap. |
 
-```
-📁 root/
-├── index.html
-├── research.html
-├── teaching.html
-├── style.css
-├── README.md
-├── robots.txt       # (optional, for SEO)
-├── sitemap.xml      # (optional, for SEO)
-├── .nojekyll        # (optional, to disable Jekyll on GitHub Pages)
-│
-├── 📁 assets/
-│   ├── 📁 css/
-│   │   └── style.css
-│   ├── 📁 js/
-│   │   ├── light-dark.js
-│   │   ├── set-title.js
-│   │   └── script.js
-│   └── 📁 images/
-├── 📁 files/
-```
+## Editing
 
-## 🚀 Features
+- **Add a paper:** copy a `.paper-entry` block in `index.html` into the right
+  section. Each block is a title `<p>`, a `.paper-links` row (abstract button +
+  links), and a hidden `.abstract-text` block.
+- **Change colors or fonts:** edit the `:root` / `[data-theme="dark"]` custom
+  properties at the top of `assets/css/style.css`, and the Google Fonts `<link>`
+  in `index.html`.
+- **Preview locally:** `python3 -m http.server` then open
+  `http://localhost:8000`.
 
-- Responsive layout for mobile and desktop
-- Toggle switch for light/dark mode
-- Clean, minimalist design for easy navigation
-- SEO-optimized with `meta` tags, `robots.txt`, and `sitemap.xml`
-- Sidebar image dynamically repositions on smaller screens
+## Deploy
 
-## 🛠️ Built With
+Push to `main`. GitHub Pages publishes automatically.
 
-- HTML5
-- CSS3 (including media queries and flexbox)
-- Vanilla JavaScript (for theme toggle and enhancements)
-- GitHub Pages for hosting
+## Built with
 
-## 🧩 How to Customize
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/wcarterbryson/wcarterbryson.github.io.git
-   ```
-
+- HTML5, CSS3 (custom properties, flexbox, media queries)
+- Vanilla JavaScript
+- GitHub Pages

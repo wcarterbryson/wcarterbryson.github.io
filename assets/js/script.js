@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (currentPath === '') currentPath = 'index.html';
 
   if (currentPath === 'index.html') {
-    document.title = "Carter Bryson | Home";
+    document.title = "Carter Bryson";
   } else {
     let pageName = currentPath.replace('.html', '');
     pageName = pageName.charAt(0).toUpperCase() + pageName.slice(1);
